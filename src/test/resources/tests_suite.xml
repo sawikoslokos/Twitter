@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="All Twitter Tests">
+    <parameter name="user" value="TestowyProfil2"/>
+    <parameter name="password" value="NetGuruProject1"/>
+
+    <test name="Posting message test">
+        <parameter name="message" value="Please provide message You would like to post"/>
+        <classes>
+            <class name="tests.PostMessageTest"/>
+        </classes>
+    </test>
+
+    <test name="Add proposition to observed">
+        <classes>
+            <class name="tests.AddToObserveTest"/>
+        </classes>
+    </test>
+
+</suite>
